@@ -22,4 +22,4 @@ RUN echo "eula=true" > eula.txt
 EXPOSE 25565
 
 # Run the Minecraft server
-CMD ["java", "-Xmx1024M", "-Xms1024M", "-jar", "server.jar", "nogui"]
+CMD ["java", "-Xmx1024M", "-Xms1024M", "-Dcom.sun.management.jmxremote=false", "-XX:-UseContainerSupport", "-jar", "server.jar", "nogui"]
