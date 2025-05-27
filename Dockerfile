@@ -12,7 +12,7 @@ WORKDIR $MINECRAFT_HOME
 
 # Download the Minecraft server jar
 RUN apt-get update && apt-get install -y curl && \
-    curl -o server.jar https://launcher.mojang.com/v1/objects/fe3a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a/server.jar && \
+    curl -o server.jar https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Accept the EULA
